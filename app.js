@@ -24,10 +24,14 @@ function checkBirthdateIsLucky(){
     const sum = getSum(dob);
     const luckNum = luckyNumber.value;
     
-    if(sum%luckNum===0){
-        output.innerText = "Your Birthdate is Lucky";
+    if(luckNum){
+        if(sum%luckNum===0){
+            output.innerText = "Your Birthdate is Lucky";
+        }else{
+            output.innerText = "Your Birthdate is not Lucky";
+        }
     }else{
-        output.innerText = "Your Birthdate is not Lucky";
+        alert("Please enter Lucky Number")
     }
 }
 
