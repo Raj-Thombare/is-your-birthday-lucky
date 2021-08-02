@@ -32,11 +32,12 @@ label {
     margin: 10px;
 }
 
-#output {
-    width: 50%;
+#output-div {
+    width: 70%;
     height: 20vh;
-    border: 1px solid darkblue;
     margin: 10px auto;
+    font-weight: bold;
+    font-size: 30px;
 }
 .show-div {
     display: none;
