@@ -7,3 +7,7 @@ It's a Vanilla Javascript app which takes your birthdate and lucky number and te
 ## How does it works?
 1. It takes your birthdate and do the sum of all the numbers.
 2. then it takes your lucky number and if the sum of your birthdate digits is divisible by your lucky number then your birthday is lucky otherwise it's not!  
+
+
+## Privacy Policy
+we don't store any type of data on this website!
