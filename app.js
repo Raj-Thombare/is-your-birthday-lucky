@@ -26,9 +26,9 @@ function checkBirthdateIsLucky(){
     
     if(luckNum){
         if(sum%luckNum===0){
-            output.innerText = "Your Birthdate is Lucky!😄😁";
+            output.innerText = "Your Birthdate is Lucky!🥳";
         }else{
-            output.innerText = "Your Birthdate is not Lucky!😌😔";
+            output.innerText = "Your Birthdate is not Lucky!😌";
         }
     }else{
         alert("Please enter Lucky Number")
