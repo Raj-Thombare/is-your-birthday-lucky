@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Staatliches&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
 
 body{
     box-sizing: border-box;
@@ -33,6 +34,8 @@ button {
     background-color: transparent;
     cursor: pointer;
     color: inherit;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 14px;
 }
 
 button:hover {
@@ -43,12 +46,13 @@ button:hover {
 label {
     display: block;
     margin: 10px;
+    font-family: 'Josefin Sans', sans-serif;
 }
 
 #output-div {
     font-family: 'Staatliches', cursive;
     width: 70%;
-    height: 20vh;
+    height: 10vh;
     margin: 20px auto;
     padding: 20px;
     font-weight: bold;
