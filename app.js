@@ -4,9 +4,16 @@ var btnCheck = document.querySelector("#btn-check");
 var output = document.querySelector("#output-div");
 var showDiv = document.querySelectorAll(".show-div");
 var btnContinue = document.querySelector("#btn-continue");
+var btnCross = document.querySelector("#btn-cross");
+var privacyAlert = document.querySelector("#privacy-div");
 
 btnCheck.addEventListener("click", checkBirthdateIsLucky);
 btnContinue.addEventListener("click", continueBtnHandler);
+btnCross.addEventListener("click", crossBtnHandler);
+
+function crossBtnHandler(){
+    privacyAlert.style.display = "none";
+}
 
 function continueBtnHandler(){
     let birthdayDate = dateOfBirth.value;
@@ -14,7 +21,7 @@ function continueBtnHandler(){
         showDiv[0].style.display = "block";
         showDiv[1].style.display = "block";
     }else{
-        alert("Please enter Birthdate to continue!!")
+        output.innerText = "Please enter Birthdate to continue!!";
     }
     
 }
@@ -26,12 +33,12 @@ function checkBirthdateIsLucky(){
     
     if(luckNum){
         if(sum%luckNum===0){
-            output.innerText = "Your Birthdate is Lucky!🥳";
+            output.innerText = "Yay!, Your Birthdate is Lucky!🥳";
         }else{
-            output.innerText = "Your Birthdate is not Lucky!😌";
+            output.innerText = "Oops!, Your Birthdate is not Lucky!😭";
         }
     }else{
-        alert("Please enter Lucky Number")
+        output.innerText = "Please enter Lucky Number";
     }
 }
 
