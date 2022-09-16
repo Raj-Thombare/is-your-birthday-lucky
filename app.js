@@ -31,7 +31,7 @@ function checkBirthdateIsLucky(){
     const sum = getSum(dob);
     const luckNum = luckyNumber.value;
     
-    if(luckNum){
+    if(luckNum > 0){
         if(sum%luckNum===0){
             output.innerText = "Yay!, Your Birthdate is Lucky!🥳";
         }else{
