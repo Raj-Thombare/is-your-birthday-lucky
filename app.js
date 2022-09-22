@@ -39,7 +39,7 @@ function checkBirthdateIsLucky(){
             output.innerText = "Oops!, Your Birthdate is not Lucky!😭";
         }
       }else{
-          output.innerText = "Enter positive Lucky Number";
+          output.innerText = "Lucky Number should be greater than 0!";
       }
     
     }else{
